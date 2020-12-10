@@ -20,9 +20,24 @@ Examples:
 Notes:
 - The sentence always starts with "Make me".
 - Try to solve this without using conditional statements like if/else.
+
+UPER
+Understand
+-Manipulating or building a new string? 
+
+Plan
+- make new string?
+- change og string?
+- txt.replace("smile", ":D")
 """
 
 
 def emotify(txt):
-    # Your code here
+    txt = txt.replace("smile", ":D").replace("grin", ":)").replace("sad", ":(").replace("mad", ":p")
+    
+    return txt
 
+print(emotify("Make me smile") )
+print(emotify("Make me grin"))
+print(emotify("Make me sad"))
+print(emotify("Make me mad"))
